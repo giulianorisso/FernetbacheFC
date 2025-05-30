@@ -30,6 +30,13 @@ h3{
   text-decoration:underline;  
 }
 
+h5{
+  font-family: "Special Gothic Condensed One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: xx-large;
+}
+
 p{
   font-family: "Special Gothic Condensed One", sans-serif;
   font-size: x-large;
@@ -109,6 +116,10 @@ header {
 
 main{
   padding: 60px 0px;
+}
+
+#carouselExampleCaptions{
+  left: 25%;
 }
 
 /* ol beneficios */
@@ -243,20 +254,22 @@ footer {
 
 /* === MEDIA QUERIES === */
 
-/* Para tablets: hasta 992px */
-@media screen and (max-width: 992px) {
+/* Para tablets: hasta 768px */
+@media screen and (max-width: 768px) {
   h2{
     font-size: 40px;
   }
   h3{
     font-size: large;
   }
-  .nav-menu {
-    gap: 20px;
-    padding: 10px 20px;
+  .navheader{
+    display: none;
   }
   p{
     font-size: medium;
+  }
+  li{
+    font-size: large;
   }
 
   .titulo h1 {
@@ -293,15 +306,8 @@ footer {
     height: 100px;
   }
 
-  .navheader {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-menu {
-    flex-direction: column;
-    gap: 5px;
-    padding: 10px;
+  .navheader{
+    display: none;
   }
 
   .titulo img {
@@ -337,10 +343,7 @@ footer {
   }
 
   .aside-filt{
-    visibility:hidden;
-    margin: 0;
-    padding: 0;
-    width: 0;
+    display: none;
   }
   .productos{
     width: max-content
@@ -363,7 +366,8 @@ footer {
   }
 
   .sponsors-div {
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 15px;
   }
 
