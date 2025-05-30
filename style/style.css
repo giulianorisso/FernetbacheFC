@@ -118,10 +118,11 @@ main{
   padding: 60px 0px;
 }
 
-#carouselExampleCaptions{
-  left: 25%;
+.img-pj{
+  height: 650px;
+  position: relative;
+  left: 33%;
 }
-
 /* ol beneficios */
 ol{
   list-style-type:circle
