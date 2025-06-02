@@ -19,6 +19,14 @@ main{
             width: 80%;
         }
     }
+    .tabla{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 600px;
+            height: 700px
+        }
+    }
     .form-socios{
         @include font;
         font-size: x-large;

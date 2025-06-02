@@ -41,4 +41,19 @@ footer{
             }
         }
     }
+    @include mobile{
+        .sponsor{
+            width: 90px;
+            height: 90px;
+        }
+        .sponsors-div {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        }
+        .sponsor {
+            width: 150px;
+            height: 150px;
+        }
+    }
 }
