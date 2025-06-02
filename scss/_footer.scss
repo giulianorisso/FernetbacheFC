@@ -1,0 +1,44 @@
+footer{
+    padding: 30px;
+    .patrocinadores{
+        margin-bottom: 15px;
+        .sponsors-div{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+            .sponsor{
+                width: 200px;
+                height: 200px;
+                border-radius: 10px;
+            }
+        }
+    }
+    .redes-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        .logobn{
+            width: 150px !important;
+            height: 150px !important;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .social{
+            p{
+                margin-bottom: 10px;
+            }
+            .icons{
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                flex-wrap: wrap;
+                img{
+                    width: 40px !important;
+                    height: 40px !important;
+                }
+            }
+        }
+    }
+}

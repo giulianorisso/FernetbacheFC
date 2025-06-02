@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@mixin font{
+    font-family: "Special Gothic Condensed One", sans-serif;
+    font-weight: 400 bold;
+    font-style: normal;
+    text-align: center;
+    font-size: xx-large;
+    padding: 5px;
+    text-decoration:underline;
+}
+
+@mixin mobile{
+    @media (max-width: 576px){
+        @content
+    }
+}
+
+h1{
+    @include font;
+    text-decoration: none
+}
+h2{
+    @include font;
+    font-size: 50px;
+    padding: 10px;
+}
+h3{
+    @include font
+}
+h5{
+    @include font;
+}
+p{
+    @include font;
+    font-size: large;
+    padding: 10px;
+    text-decoration: none
+}
+body{
+    background: linear-gradient(rgb(48, 48, 48),rgb(180, 180, 180))
+}

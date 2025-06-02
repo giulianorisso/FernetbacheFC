@@ -1,0 +1,50 @@
+.productos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    gap: 7px;
+    .item{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.548);
+        width:30%;
+        height: 400px;
+        border: solid black 3px;
+        border-radius: 2%;
+        img{
+              width:auto;
+            height: 345px;
+            padding: 20px;
+            object-fit: cover;
+        }
+        p{
+            color: white;
+        }
+        p:hover{
+            color: brown;
+            text-decoration: underline;
+        }
+    }
+    @include mobile{
+        .aside-filt{
+            display: none;
+        }
+        .productos{
+            width: max-content
+        }
+        .item{
+            height: 275px;
+            img {
+                height: 200px;
+                width: 146px;
+                object-fit: cover;
+            }
+            p{
+                font-size: small;
+            }
+        }
+    }
+}
