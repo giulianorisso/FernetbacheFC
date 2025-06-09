@@ -120,6 +120,22 @@ header .titulo h1 {
   color: white;
   -webkit-text-stroke: 2px black;
 }
+@media (max-width: 576px) {
+  header .logo {
+    height: 100px;
+  }
+  header .navheader {
+    display: none;
+  }
+  header .titulo img {
+    height: 250px;
+  }
+  header .titulo h1 {
+    font-size: 60px;
+    bottom: 10px;
+    text-align: center;
+  }
+}
 
 main {
   padding: 60px 0px;
@@ -149,6 +165,14 @@ main ol li {
   margin-bottom: 20px;
   width: 80%;
 }
+main section .tabla {
+  display: flex;
+  justify-content: center;
+}
+main section .tabla img {
+  width: 600px;
+  height: 700px;
+}
 main .form-socios {
   font-family: "Special Gothic Condensed One", sans-serif;
   font-weight: 400 bold;
@@ -165,6 +189,35 @@ main .form-socios {
   margin: 20px;
   padding: 50px;
   width: 700px;
+}
+@media (max-width: 576px) {
+  main .carousel {
+    width: 400px;
+    height: auto;
+  }
+  main .carousel .carousel-item {
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+  }
+  main .carousel .carousel-item img {
+    width: 300px;
+  }
+  main .img-pj {
+    height: 380px;
+    position: relative;
+    left: 13%;
+  }
+  main .img-fix {
+    height: 200px;
+    position: relative;
+    left: 13%;
+    top: 25%;
+  }
+  main .form-socios {
+    padding: 10px;
+    font-size: large;
+  }
 }
 
 footer {
@@ -183,24 +236,45 @@ footer .patrocinadores .sponsors-div .sponsor {
   height: 200px;
   border-radius: 10px;
 }
-footer .redes-conteiner {
+footer .redes .redes-container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
 }
-footer .redes-conteiner .social p {
+footer .redes .redes-container .logobn {
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 50%;
+  object-fit: cover;
+}
+footer .redes .redes-container .social p {
   margin-bottom: 10px;
 }
-footer .redes-conteiner .social .icons {
+footer .redes .redes-container .social .icons {
   display: flex;
   justify-content: center;
   gap: 15px;
   flex-wrap: wrap;
 }
-footer .redes-conteiner .social .icons img {
-  width: 40px;
-  height: 40px;
+footer .redes .redes-container .social .icons img {
+  width: 40px !important;
+  height: 40px !important;
+}
+@media (max-width: 576px) {
+  footer .sponsor {
+    width: 90px;
+    height: 90px;
+  }
+  footer .sponsors-div {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  footer .sponsor {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 .productos {
@@ -233,6 +307,25 @@ footer .redes-conteiner .social .icons img {
 .productos .item p:hover {
   color: brown;
   text-decoration: underline;
+}
+@media (max-width: 576px) {
+  .productos .aside-filt {
+    display: none;
+  }
+  .productos .productos {
+    width: max-content;
+  }
+  .productos .item {
+    height: 275px;
+  }
+  .productos .item img {
+    height: 200px;
+    width: 146px;
+    object-fit: cover;
+  }
+  .productos .item p {
+    font-size: small;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
