@@ -13,35 +13,37 @@ footer{
             }
         }
     }
-    .redes-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-
-        .logobn{
-            width: 150px !important;
-            height: 150px !important;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-        .social{
-            p{
-                margin-bottom: 10px;
+    .redes{
+        .redes-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            
+            .logobn{
+                width: 150px !important;
+                height: 150px !important;
+                border-radius: 50%;
+                object-fit: cover;
             }
-            .icons{
-                display: flex;
-                justify-content: center;
-                gap: 15px;
-                flex-wrap: wrap;
-                img{
-                    width: 40px !important;
-                    height: 40px !important;
+            .social{
+                p{
+                    margin-bottom: 10px;
+                }
+                .icons{
+                    display: flex;
+                    justify-content: center;
+                    gap: 15px;
+                    flex-wrap: wrap;
+                    img{
+                        width: 40px !important;
+                        height: 40px !important;
+                    }
                 }
             }
         }
     }
-    @include mobile{
+        @include mobile{
         .sponsor{
             width: 90px;
             height: 90px;
