@@ -1,49 +1,55 @@
-.productos{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-    gap: 7px;
-    .item{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        background-color: rgba(0, 0, 0, 0.548);
-        width:30%;
-        height: 400px;
-        border: solid black 3px;
-        border-radius: 2%;
-        img{
-              width:auto;
-            height: 345px;
-            padding: 20px;
-            object-fit: cover;
-        }
-        p{
-            color: white;
-        }
-        p:hover{
-            color: brown;
-            text-decoration: underline;
-        }
+.tienda{
+    .navbar{
+        margin-bottom: 10px;
     }
-    @include mobile{
-        .aside-filt{
-            display: none;
-        }
-        .productos{
-            width: max-content
-        }
+    .productos{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-content: space-evenly;
+            gap: 7px;
         .item{
-            height: 275px;
-            img {
-                height: 200px;
-                width: 146px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                background-color: rgba(0, 0, 0, 0.548);
+                width:30%;
+                height: 400px;
+                border: solid black 3px;
+                border-radius: 2%;
+                transition: transform 0.5s;
+            img{
+                width:auto;
+                height: 345px;
+                padding: 20px;
                 object-fit: cover;
             }
             p{
-                font-size: small;
+                color: white;
+            }
+        }
+        .item:hover{
+                transform: scale(1.05);
+                p{
+                    color: brown
+                }
+            
+        }
+        @include mobile{
+            .productos{
+                width: max-content
+            }
+            .item{
+                height: 275px;
+                img {
+                    height: 200px;
+                    width: 130px;
+                    object-fit: cover;
+                }
+                p{
+                    font-size: small;
+                }
             }
         }
     }

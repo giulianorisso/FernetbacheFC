@@ -98,6 +98,7 @@ header .menu {
   font-size: x-large;
   color: rgb(138, 129, 13);
   text-decoration: none;
+  transition: color 0.3s;
 }
 header .menu:hover {
   color: white;
@@ -218,6 +219,10 @@ main .form-socios {
     padding: 10px;
     font-size: large;
   }
+  main section .tabla img {
+    width: 400px;
+    height: 500px;
+  }
 }
 
 footer {
@@ -277,14 +282,17 @@ footer .redes .redes-container .social .icons img {
   }
 }
 
-.productos {
+.tienda .navbar {
+  margin-bottom: 10px;
+}
+.tienda .productos {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-content: space-evenly;
   gap: 7px;
 }
-.productos .item {
+.tienda .productos .item {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -294,36 +302,36 @@ footer .redes .redes-container .social .icons img {
   height: 400px;
   border: solid black 3px;
   border-radius: 2%;
+  transition: transform 0.5s;
 }
-.productos .item img {
+.tienda .productos .item img {
   width: auto;
   height: 345px;
   padding: 20px;
   object-fit: cover;
 }
-.productos .item p {
+.tienda .productos .item p {
   color: white;
 }
-.productos .item p:hover {
+.tienda .productos .item:hover {
+  transform: scale(1.05);
+}
+.tienda .productos .item:hover p {
   color: brown;
-  text-decoration: underline;
 }
 @media (max-width: 576px) {
-  .productos .aside-filt {
-    display: none;
-  }
-  .productos .productos {
+  .tienda .productos .productos {
     width: max-content;
   }
-  .productos .item {
+  .tienda .productos .item {
     height: 275px;
   }
-  .productos .item img {
+  .tienda .productos .item img {
     height: 200px;
-    width: 146px;
+    width: 130px;
     object-fit: cover;
   }
-  .productos .item p {
+  .tienda .productos .item p {
     font-size: small;
   }
 }
