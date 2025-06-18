@@ -168,15 +168,15 @@ main ol li {
   margin-bottom: 20px;
   width: 80%;
 }
-main section .tabla {
+main div .tabla {
   display: flex;
   justify-content: center;
 }
-main section .tabla img {
+main div .tabla img {
   width: 600px;
   height: 700px;
 }
-main section .texto {
+main div .texto {
   background-color: rgba(255, 255, 255, 0.61);
   display: flex;
   justify-content: center;
