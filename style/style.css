@@ -227,9 +227,9 @@ main .form-socios {
     padding: 10px;
     font-size: large;
   }
-  main section .tabla img {
-    width: 400px;
-    height: 500px;
+  main div .tabla img {
+    width: 350px;
+    height: 480px;
   }
 }
 
