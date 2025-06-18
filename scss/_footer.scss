@@ -21,8 +21,8 @@ footer{
             gap: 30px;
             
             .logobn{
-                width: 150px !important;
-                height: 150px !important;
+                width: 150px;
+                height: 150px;
                 border-radius: 50%;
                 object-fit: cover;
             }
@@ -35,9 +35,17 @@ footer{
                     justify-content: center;
                     gap: 15px;
                     flex-wrap: wrap;
-                    img{
-                        width: 40px !important;
-                        height: 40px !important;
+                    .icon-img{
+                        width: 40px;
+                        height: 40px;
+                        transition: transform 0,5s;
+                    }
+                    .icon-img:hover{
+                        transform: scale(1.1);
+                        border-style: groove;
+                        border-width: 5px;
+                        border-radius: 100%;
+                        border-color: white;
                     }
                 }
             }

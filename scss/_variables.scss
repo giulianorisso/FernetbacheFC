@@ -35,10 +35,10 @@ h5{
 }
 p{
     @include font;
-    font-size: large;
+    font-size: x-large;
     padding: 10px;
     text-decoration: none
 }
 body{
-   background-image: url("fondo.png");
+    background-image: url("../images/fondo.png");
 }

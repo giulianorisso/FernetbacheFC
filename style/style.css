@@ -54,13 +54,13 @@ p {
   font-size: xx-large;
   padding: 5px;
   text-decoration: underline;
-  font-size: large;
+  font-size: x-large;
   padding: 10px;
   text-decoration: none;
 }
 
 body {
-  background: linear-gradient(rgb(48, 48, 48), rgb(180, 180, 180));
+  background-image: url("../images/fondo.png");
 }
 
 header {
@@ -113,6 +113,8 @@ header .titulo img {
   height: 500px;
   object-fit: cover;
   display: block;
+  border-radius: 4%;
+  border-color: black 4px;
 }
 header .titulo h1 {
   position: absolute;
@@ -173,6 +175,12 @@ main section .tabla {
 main section .tabla img {
   width: 600px;
   height: 700px;
+}
+main section .texto {
+  background-color: rgba(255, 255, 255, 0.61);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 main .form-socios {
   font-family: "Special Gothic Condensed One", sans-serif;
@@ -248,8 +256,8 @@ footer .redes .redes-container {
   gap: 30px;
 }
 footer .redes .redes-container .logobn {
-  width: 150px !important;
-  height: 150px !important;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -262,9 +270,17 @@ footer .redes .redes-container .social .icons {
   gap: 15px;
   flex-wrap: wrap;
 }
-footer .redes .redes-container .social .icons img {
-  width: 40px !important;
-  height: 40px !important;
+footer .redes .redes-container .social .icons .icon-img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0, 5s;
+}
+footer .redes .redes-container .social .icons .icon-img:hover {
+  transform: scale(1.1);
+  border-style: groove;
+  border-width: 5px;
+  border-radius: 100%;
+  border-color: white;
 }
 @media (max-width: 576px) {
   footer .sponsor {
