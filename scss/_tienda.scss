@@ -36,19 +36,27 @@
                 }
             
         }
-        @include mobile{
-            .productos{
-                width: max-content
+    }
+    @include mobile{
+        .aside{
+            .row{
+                .aside-filt{
+                    display: none;
+                }
             }
+        }
+        .productos{
+            width: max-content;
             .item{
-                height: 275px;
+                height: 250px;
                 img {
                     height: 200px;
-                    width: 130px;
+                    width: 150px;
                     object-fit: cover;
                 }
                 p{
                     font-size: small;
+                    padding: 0;
                 }
             }
         }

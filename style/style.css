@@ -107,6 +107,7 @@ header .titulo {
   position: relative;
   width: 100%;
   max-height: 500px;
+  margin-top: 10px;
 }
 header .titulo img {
   width: 100%;
@@ -336,19 +337,23 @@ footer .redes .redes-container .social .icons .icon-img:hover {
   color: brown;
 }
 @media (max-width: 576px) {
-  .tienda .productos .productos {
+  .tienda .aside .row .aside-filt {
+    display: none;
+  }
+  .tienda .productos {
     width: max-content;
   }
   .tienda .productos .item {
-    height: 275px;
+    height: 250px;
   }
   .tienda .productos .item img {
     height: 200px;
-    width: 130px;
+    width: 150px;
     object-fit: cover;
   }
   .tienda .productos .item p {
     font-size: small;
+    padding: 0;
   }
 }
 
